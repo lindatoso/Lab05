@@ -55,7 +55,7 @@ class DepositoStrumenti:
 
     def strumenti_ordinati_per_marca(self):
         """Ordina gli strumenti per marca in ordine alfabetico"""
-        return sorted(self.strumenti, key=lambda strumento: strumento.marca.lower())
+        return sorted(self.strumenti, key=lambda strumento: strumento.marca.lower()) # aggiungo lower per non sfalsare l'ordinamento
 
     def nuovo_prestito(self, data, id_strumento, cognome_allievo):
         """Crea un nuovo prestito"""
